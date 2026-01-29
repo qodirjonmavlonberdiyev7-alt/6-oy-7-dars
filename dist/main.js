@@ -94,9 +94,9 @@ function compressString(str) {
     }
     return result;
 }
-console.log(compressString("aaabbcddd")); // a3b2c1d3
-console.log(compressString("hhhello")); // h3e1l2o1
-console.log(compressString("abcd")); // a1b1c1d1
+console.log(compressString("aaabbcddd"));
+console.log(compressString("hhhello"));
+console.log(compressString("abcd"));
 //7-masala
 function isValidSudoku(board) {
     const seen = new Set();
@@ -154,5 +154,48 @@ const user = {
     age: 25,
     profession: "IT Developer"
 };
+console.log(user.name);
+console.log(user.age);
+console.log(user.profession);
+const user1 = ["Ali", 20, "SMM"];
+console.log(user1[0]);
+console.log(user1[1]);
+console.log(user1[2]);
+const cars = [
+    { make: "Toyota", model: "Camry", year: 2025 },
+    { make: "BMW", model: "M5", year: 2025 }
+];
+function printBooks(books) {
+    for (const book of books) {
+        console.log(book.title);
+    }
+}
+printBooks([
+    { title: "O'tgan kunlar", author: "Abdulla Qodiriy", pages: 450 },
+    { title: "Atomic Habits", author: "James Clear", pages: 320 }
+]);
+//Primitive types bilan ishlash
+//1
+function printValue(value) {
+    if (typeof value === "string") {
+        console.log(value.length);
+    }
+    else {
+        console.log(value * 2);
+    }
+}
+printValue("salom");
+printValue(10);
+//2
+function showId(id) {
+    if (typeof id === "string") {
+        console.log("String ID:", id);
+    }
+    else {
+        console.log("Number ID:", id);
+    }
+}
+showId("A123");
+showId(99);
 export {};
 //# sourceMappingURL=main.js.map
